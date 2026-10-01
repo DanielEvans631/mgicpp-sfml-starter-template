@@ -19,7 +19,12 @@ class Game
 
  private:
   sf::RenderWindow& window;
-  
+  sf::Texture background_texture;
+  sf::Sprite background = sf::Sprite(background_texture);
+  sf::Texture bird_texture;
+  sf::Sprite bird = sf::Sprite(bird_texture);
+  sf::Font font{ "../Data/Fonts/OpenSans-Bold.ttf" };
+  sf::Text title_text{ font,"WhackaMole"};
 
 };
 
